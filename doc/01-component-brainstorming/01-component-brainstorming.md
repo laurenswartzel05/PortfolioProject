@@ -1,12 +1,11 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Lauren Swartzel
+- **Dot Number**: swartzel.13
+- **Due Date**: 2/6/26 @4:10pm EST
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +28,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +50,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +64,6 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,15 +102,10 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+> I love to read, bake, and build legos. I currently am going down the AI path in the software sequence, but I am thinking of switching to cybersecurity. 
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -122,7 +113,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -143,7 +133,6 @@ about different ways you might allow a client to manipulate your component.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +200,68 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: ReadingQueue
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model a personal reading queue. Sort of like a to be read list. The component represents a collection of books that the user plans to read, where books are typically read in order but may occasionally be moved based on priority. This design reflects my interest in reading and staying organized with what I want to read next.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addBook(String title): adds a book to the back of the queue String removeNextBook(): removes and returns the next book to be read boolean isEmpty(): reports whether the reading queue is empty
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - boolean containsBook(String title): reports whether the given book is in the queue int size(): reports the number of books in the queue void moveToFront(String title): moves a specific book to the front of the queue if it exists
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. Since this component inherits from Standard, it must be mutable. Methods like addBook, removeNextBook, clear, and transferFrom all modify the state of the queue.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. The component only needs to store book titles as strings, so no internal helper classes are required.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. There are no fixed categories or modes that require enums or constants.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. For example, containsBook can be implemented by repeatedly removing books using removeNextBook, checking each title, and then restoring the queue to its original state. Similarly, size can be computed by temporarily cycling through the queue using kernel operations.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Recipe
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model a baking recipe consisting of ingredients and preparation steps. This component reflects my interest in baking and allows a user to build, modify, and scale a recipe while keeping the core structure simple.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addIngredient(String name, int amount): adds an ingredient with a specified amount void removeIngredient(String name): removes an ingredient from the recipe void addStep(String step): adds a preparation step to the recipe
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - int ingredientCount(): reports the number of ingredients in the recipe void scaleRecipe(int factor): scales all ingredient amounts by a given factor void clearRecipe(): removes all ingredients and steps
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. The recipe changes as ingredients and steps are added or removed, and inheritance from Standard requires mutability.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. A structure such as Map.Pair<String, Integer> could be used store ingredient names with their amounts.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. Ingredient names and steps are free-form and do not require predefined categories.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. For example, ingredientCount can be implemented by iterating through the stored ingredients that were added using addIngredient. scaleRecipe can be implemented by removing each ingredient with removeIngredient and re-adding it with an updated amount.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: MakeupBag
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model a makeup bag that stores makeup products owned by a user. This design reflects my interest in makeup while keeping the component simple and focused on managing a collection of items.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addProduct(String product): adds a makeup product to the bag void removeProduct(String product): removes a product from the bag void clearBag(): removes all products from the makeup bag
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - boolean containsProduct(String product): reports whether a product is in the bag int productCount(): reports the number of products in the bag boolean isEmpty(): reports whether the makeup bag is empty
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. The contents of the makeup bag change over time, and methods like addProduct, removeProduct, and clearBag mutate the state of the component as required by Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. Products can be stored as strings, so no internal classes are strictly necessary.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. The component does not require predefined categories or fixed constants.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. For example, productCount can be implemented by temporarily removing products using removeProduct, counting them, and then restoring the original contents. containsProduct can be implemented using a similar approach.
 
 ## Post-Assignment
 
