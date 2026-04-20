@@ -8,6 +8,20 @@ the following form: YYYY.0M.0D.
 
 ## 2026.02.26
 
+## 2026.03.29
+
+### Just Added
+
+- Implemented ReadingQueueSecondary abstract class
+- Implemented containsBook and moveToFront using kernel methods
+- Implemented toString and equals methods
+
+### Changed
+
+- Refined method designs to support secondary implementations
+
+## 2026.02.05
+
 ### Added
 
 - Designed a proof of concept for ReadingQueue component
