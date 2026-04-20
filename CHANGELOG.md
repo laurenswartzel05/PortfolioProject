@@ -26,25 +26,13 @@ the following form: YYYY.0M.0D.
 
 - Implemented ReadingQueue1L kernel class using ArrayList representation
 
-### Changed
+### New Changed
 
 - Defined representation, convention, and correspondence for ReadingQueue
 
-## 2026.02.05
-
-### Added
-
-- Designed a proof of concept for ReadingQueue component
-- Implemented core methods including addBook, removeNextBook, moveToFront, containsBook, and size
-- Added a main method demonstrating component functionality
-
-## 2026.02.05
-
-### Initial Added
-
 ## 2026.03.09
 
-### Added
+### Also Added
 
 - Designed kernel and enhanced interfaces for readingQueue component
 
