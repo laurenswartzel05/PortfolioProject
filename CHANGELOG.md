@@ -20,6 +20,16 @@ the following form: YYYY.0M.0D.
 
 - Refined method designs to support secondary implementations
 
+## 2026.04.14
+
+### Recently Added
+
+- Implemented ReadingQueue1L kernel class using ArrayList representation
+
+### Changed
+
+- Defined representation, convention, and correspondence for ReadingQueue
+
 ## 2026.02.05
 
 ### Added
