@@ -1,3 +1,7 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 /**
  * Test cases for the ReadingQueue1L kernel implementation.
  *
