@@ -6,17 +6,50 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## 2026.02.26
+## 2026.04.21
 
 ### Added
 
-- Designed a proof of concept for ReadingQueue component
-- Implemented core methods including addBook, removeNextBook, moveToFront, containsBook, and size
-- Added a main method demonstrating component functionality
+- Designed test suite for ReadingQueue component
+- Designed two different use cases for ReadingQueue component
+
+### Updated
+
+- Refined ReadingQueue design and completed full implementation (interfaces, abstract class, and kernel)
+
+## 2026.02.26
+
+## 2026.03.29
+
+### Just Added
+
+- Implemented ReadingQueueSecondary abstract class
+- Implemented containsBook and moveToFront using kernel methods
+- Implemented toString and equals methods
+
+### Changed
+
+- Refined method designs to support secondary implementations
+
+## 2026.04.14
+
+### Recently Added
+
+- Implemented ReadingQueue1L kernel class using ArrayList representation
+
+### New Changed
+
+- Defined representation, convention, and correspondence for ReadingQueue
+
+## 2026.03.09
+
+### Also Added
+
+- Designed kernel and enhanced interfaces for readingQueue component
 
 ## 2026.02.05
 
-### Initial Added
+### First Added
 
 - Designed a ReadingQueue component
 - Designed a Recipe component
