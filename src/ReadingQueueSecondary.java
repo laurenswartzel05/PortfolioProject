@@ -1,6 +1,6 @@
 /**
  * Secondary (enhanced) methods for ReadingQueue.
- * 
+ *
  * @author Lauren Swartzel
  */
 public abstract class ReadingQueueSecondary implements ReadingQueue {
@@ -133,5 +133,26 @@ public abstract class ReadingQueueSecondary implements ReadingQueue {
         }
 
         return equal;
+    }
+
+    /**
+     * Returns a hash code for this ReadingQueue.
+     *
+     * @return hash code value
+     * @ensures hashCode = hash code based on contents of this
+     */
+    @Override
+    public int hashCode() {
+        int hash = 1;
+        int n = this.size();
+        final int thirtyOne = 31;
+
+        for (int i = 0; i < n; i++) {
+            String current = this.removeNextBook();
+            hash = thirtyOne * hash + current.hashCode();
+            this.addBook(current);
+        }
+
+        return hash;
     }
 }
