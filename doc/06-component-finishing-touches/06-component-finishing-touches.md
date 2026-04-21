@@ -302,45 +302,49 @@ Take some time to fill them out honestly.
 > in class fails to map to the real world. Now that you've had a chance to
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
-
-<!-- TODO: discuss -->
-
+>
+> I think this project helped me understand software development a lot better because it forced me to go through the full process instead of just writing small pieces of code. Having to design something, implement it, test it, and refine it made it feel much closer to real-world development. Before this, I mostly thought of coding as just writing methods to solve problems, but now I see how important structure, planning, and design decisions are, especially when building something that someone else could actually use.
+>
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
-
-<!-- TODO: discuss -->
-
+>
+> This project definitely showed me that I was not as comfortable with designing good interfaces and layering components as I thought. It was easy to come up with ideas, but harder to decide what belongs in the kernel versus secondary methods and how to make everything work together cleanly. I also realized I needed more practice with testing, especially writing tests that actually verify behavior and not just return values. I addressed this by going back through examples from class and trying to match that structure more closely in my own code.
+>
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
-
-<!-- TODO: discuss -->
-
+>
+> My perspective has changed in that I now see software development as more of a design process rather than just coding. It can be frustrating at times, especially when things don’t fit together the way you expected, but I still enjoy it overall. I like the problem-solving aspect and the fact that you can build something from nothing, and this project made that more clear to me.
+>
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
 > However, there are plenty of other skills you may have picked up through
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
-
-<!-- TODO: discuss -->
-
+>
+>Through this project, I improved my ability to break down a larger problem into smaller pieces and work through it step by step. I also got better at debugging, reading and understanding requirements, and organizing my code in a way that makes sense long term. Outside of coding, I improved my ability to stay consistent with a long-term project and manage my time across multiple steps. Normally when I do a big project like this I like to do it all at once, but this forced me to space it out which I think helped me to create better quality work.
+>
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
-
-<!-- TODO: discuss -->
-
+>
+> Designed and implemented a custom Java component following layered software architecture principles.
+Developed and tested a full API including kernel, secondary methods, and implementation classes.
+Wrote comprehensive JUnit tests to validate functionality and ensure correctness.
+Applied design-by-contract principles including preconditions and postconditions.
+Practiced version control and iterative development using Git.
+>
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
-
-<!-- TODO: discuss -->
-
+>
+> Working on this project made me more confident in my ability to build something from scratch, which is encouraging. I still enjoy this type of work, but it also made me think more about what areas of computer science I want to focus on. Since I’m interested in AI and possibly cybersecurity, this project helped me see the importance of strong fundamentals, which both of those areas rely on.
+>
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
-
-<!-- TODO: discuss -->
+>
+> To continue on my career path, I could work on more personal projects, especially ones related to AI or security, and try to apply what I’ve learned in different contexts. I could also practice more with real-world tools and frameworks to build on these fundamentals. As for mentors, I could reach out to professor Grifski, other professors in CSE, as well as upperclassmen or alumni who have experience in the fields I’m interested in.
 
 ### Changelog
 
