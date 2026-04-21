@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## 2026.04.21
+
+### Added
+
+- Designed test suite for ReadingQueue component
+- Designed two different use cases for ReadingQueue component
+
+### Updated
+
+- Refined ReadingQueue design and completed full implementation (interfaces, abstract class, and kernel)
+
 ## 2026.02.26
 
 ## 2026.03.29
